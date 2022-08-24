@@ -1,1 +1,44 @@
-style-1.css
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.7;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(84, 252, 84, 0.705);
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: #555;
+}
+
+.primary-heading-main {
+  font-size: 6.2rem;
+  font-weight: 400;
+}
+
+.primary-heading-sub {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
